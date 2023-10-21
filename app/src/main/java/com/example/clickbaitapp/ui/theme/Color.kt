@@ -2,6 +2,8 @@ package com.example.clickbaitapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+package com.example.compose
+
 val md_theme_light_primary = Color(0xFF006C4C)
 val md_theme_light_onPrimary = Color(0xFFFFFFFF)
 val md_theme_light_primaryContainer = Color(0xFF89F8C7)

@@ -17,6 +17,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -70,9 +72,11 @@ fun clickbaitItem(
                 .padding(8.dp)
         ) {
             Image(
-                modifier = Modifier
+                modifier = modifier
                     .size(64.dp)
-                    .padding(8.dp),
+                    .padding(8.dp)
+                    .clip(MaterialTheme.shapes.small),
+                contentScale = ContentScale.Crop,
                 painter = painterResource(cards.imageResourceId),
                 contentDescription = null
             )
